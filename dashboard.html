@@ -1,0 +1,169 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-variant":"#d6e5ed",outline:"#6e7979","primary-fixed-dim":"#77d5d9","on-primary-fixed":"#002021","surface-container":"#e1f0f8","outline-variant":"#bdc9c9","on-secondary":"#ffffff","error-container":"#ffdad6","on-error":"#ffffff","inverse-surface":"#243238","surface-container-low":"#e7f6fe","on-primary-fixed-variant":"#004f52",background:"#f3faff","surface-container-lowest":"#ffffff","surface-container-highest":"#d6e5ed","tertiary-container":"#4a7c5f","on-surface-variant":"#3e4949","on-tertiary-fixed":"#002111","on-primary":"#ffffff","on-tertiary-container":"#e2ffea","surface-container-high":"#dbebf2","on-background":"#0f1d23",secondary:"#8e4e00","on-surface":"#0f1d23","on-secondary-container":"#6f3c00","primary-fixed":"#94f2f6","on-secondary-fixed":"#2e1500","inverse-primary":"#77d5d9",tertiary:"#316348","on-tertiary-fixed-variant":"#1d5036","tertiary-fixed":"#b8efcc","surface-dim":"#cddce4","primary-container":"#007f83",error:"#ba1a1a","on-tertiary":"#ffffff","secondary-fixed-dim":"#ffb778","surface-tint":"#00696d","on-primary-container":"#e1feff",primary:"#006467","secondary-container":"#ffa44c","surface-bright":"#f3faff","tertiary-fixed-dim":"#9dd3b1",surface:"#f3faff","inverse-on-surface":"#e4f3fb","secondary-fixed":"#ffdcc1","on-error-container":"#93000a","on-secondary-fixed-variant":"#6c3a00"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"stack-gap":"8px","container-max-width":"1440px","component-gap":"16px","margin-desktop":"32px","margin-mobile":"16px",gutter:"24px"},fontFamily:{"label-sm":["Poppins"],"page-title-mobile":["Poppins"],"page-title":["Poppins"],metadata:["Poppins"],"label-md":["Poppins"],"section-heading":["Poppins"],"button-text":["Poppins"],"body-main":["Poppins"],"input-text":["Poppins"],"card-value":["Poppins"]},fontSize:{"label-sm":["12px",{lineHeight:"16px",fontWeight:"500"}],"page-title-mobile":["22px",{lineHeight:"28px",fontWeight:"600"}],"page-title":["24px",{lineHeight:"32px",fontWeight:"600"}],metadata:["11px",{lineHeight:"14px",fontWeight:"400"}],"label-md":["13px",{lineHeight:"18px",fontWeight:"500"}],"section-heading":["18px",{lineHeight:"24px",fontWeight:"600"}],"button-text":["14px",{lineHeight:"20px",fontWeight:"500"}],"body-main":["14px",{lineHeight:"20px",fontWeight:"400"}],"input-text":["14px",{lineHeight:"20px",fontWeight:"400"}],"card-value":["24px",{lineHeight:"32px",fontWeight:"600"}]}}}}</script><style>@layer base{body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-main text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-14 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-stack-gap"><div class="w-8 h-8 bg-primary rounded flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">eco</span></div><h1 class="font-page-title-mobile text-page-title-mobile text-on-surface truncate max-w-[180px]">Home</h1></div><div class="flex items-center gap-2"><button class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container"><span class="material-symbols-outlined text-on-surface-variant">notifications</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ml-1" src="https://lh3.googleusercontent.com/aida/AP1WRLuyLYcQYX3Ee15BUjdozPhj3KscoXzjs-LiJyeS0YGcAPyzwUUu8mYFff3Ok3ix2oHriW9jxcI1jh4kTaPW-gw_3ovrgfRUnLeSf4lBavwnkUeKBhiqoC1b7c-FGmWIx-5Ld11WMcRnBrGmSQPY3Pf5C9jvUqX6TgwOiA-n0UlYwM4141U2lBJ3CYdtq5Xt1Z_hFV5ECc57O53LvhNSNid8qXliTRSnqFpKVjJPFQ92Cn6ZIOWgT_aeaXJ2RHIT8R-Pu_XdIlLmPg"/></div></div></header><main class="relative w-full pt-14 pb-24 bg-surface min-h-screen px-margin-mobile"><div class="flex flex-col w-full gap-component-gap pb-safe">
+<!-- Period Selector -->
+<div class="flex items-center justify-between mt-margin-mobile">
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-full cursor-pointer hover:bg-surface-container transition-colors">
+<span class="font-label-md text-label-md text-on-surface-variant">Period:</span>
+<span class="font-button-text text-button-text text-on-surface">FY 2026</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Pending Actions Banner -->
+<a href="expense.html" class="bg-secondary-fixed text-on-secondary-fixed rounded-xl p-4 flex items-center justify-between relative overflow-hidden group cursor-pointer shadow-sm">
+<div class="absolute right-0 top-0 w-32 h-32 bg-secondary-fixed-dim/20 rounded-full blur-xl -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+<div class="flex items-center gap-3 relative z-10">
+<div class="w-10 h-10 bg-secondary-fixed-dim/30 rounded-full flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined">pending_actions</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-secondary-fixed-variant">Pending Actions</h3>
+<p class="font-button-text text-button-text">5 requests awaiting approval</p>
+</div>
+</div>
+<div class="relative z-10 flex items-center text-on-secondary-fixed-variant">
+<span class="font-label-md text-label-md mr-1">Review</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</div>
+</a><!-- Financial Summary Grid -->
+<div>
+<h2 class="font-section-heading text-section-heading text-on-surface mb-3">Financial Overview</h2>
+<div class="grid grid-cols-2 gap-3">
+<!-- Available Fund -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-outline-variant/30 flex flex-col justify-between">
+<div class="flex items-center gap-2 mb-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary">account_balance</span>
+<span class="font-label-sm text-label-sm">Available Fund</span>
+</div>
+<div>
+<div class="font-card-value text-card-value text-on-surface">Rp 8.42M</div>
+<div class="font-metadata text-metadata text-on-surface-variant mt-1">Across active grants</div>
+</div>
+</div>
+<!-- Expenses -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-outline-variant/30 flex flex-col justify-between">
+<div class="flex items-center gap-2 mb-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-error">trending_up</span>
+<span class="font-label-sm text-label-sm">Expenses</span>
+</div>
+<div>
+<div class="font-card-value text-card-value text-on-surface">Rp 3.15M</div>
+<div class="font-metadata text-metadata text-error mt-1 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> 37.4% utilized
+          </div>
+</div>
+</div>
+<!-- Remaining -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-outline-variant/30 flex flex-col justify-between">
+<div class="flex items-center gap-2 mb-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-tertiary">savings</span>
+<span class="font-label-sm text-label-sm">Remaining</span>
+</div>
+<div>
+<div class="font-card-value text-card-value text-on-surface">Rp 5.27M</div>
+<div class="font-metadata text-metadata text-tertiary mt-1 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> 62.6% available
+          </div>
+</div>
+</div>
+<!-- Pending Approval -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-outline-variant/30 flex flex-col justify-between">
+<div class="flex items-center gap-2 mb-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary">hourglass_empty</span>
+<span class="font-label-sm text-label-sm">Pending</span>
+</div>
+<div>
+<div class="font-card-value text-card-value text-on-surface">18 <span class="text-sm font-normal text-on-surface-variant">req</span></div>
+<div class="font-metadata text-metadata text-secondary mt-1">Rp 148.5M locked</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Budget Overview -->
+<div>
+<h2 class="font-section-heading text-section-heading text-on-surface mb-3">Active Budgets</h2>
+<div class="flex flex-col gap-3">
+<!-- Normal Progress -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm border border-outline-variant/30">
+<div class="flex justify-between items-end mb-2">
+<div>
+<h3 class="font-label-md text-label-md text-on-surface">Forest Governance</h3>
+<p class="font-metadata text-metadata text-on-surface-variant">Grant ID: FG-2025-A</p>
+</div>
+<span class="font-button-text text-button-text text-primary">68%</span>
+</div>
+<div class="w-full bg-surface-variant rounded-full h-2 mb-1 overflow-hidden">
+<div class="bg-primary h-2 rounded-full" style="width: 68%"></div>
+</div>
+<div class="flex justify-between text-metadata font-metadata text-on-surface-variant">
+<span>Utilized: Rp 1.2M</span>
+<span>Total: Rp 1.76M</span>
+</div>
+</div>
+<!-- Alert Progress -->
+<div class="bg-error-container/20 rounded-xl p-4 shadow-sm border border-error/20 relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-error"></div>
+<div class="flex justify-between items-end mb-2 pl-2">
+<div>
+<h3 class="font-label-md text-label-md text-on-surface flex items-center gap-1">
+              Forest Restoration
+              <span class="material-symbols-outlined text-[16px] text-error" style="font-variation-settings: 'FILL' 1;">error</span>
+</h3>
+<p class="font-metadata text-metadata text-on-surface-variant">Grant ID: FR-2025-B</p>
+</div>
+<span class="font-button-text text-button-text text-error">92%</span>
+</div>
+<div class="w-full bg-surface-variant rounded-full h-2 mb-1 overflow-hidden ml-2">
+<div class="bg-error h-2 rounded-full" style="width: 92%"></div>
+</div>
+<div class="flex justify-between text-metadata font-metadata text-on-surface-variant pl-2">
+<span>Utilized: Rp 0.92M</span>
+<span>Total: Rp 1.0M</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Actions -->
+<div class="mb-4">
+<h2 class="font-section-heading text-section-heading text-on-surface mb-3">Quick Actions</h2>
+<div class="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory hide-scrollbar">
+<button class="flex flex-col items-center gap-2 min-w-[72px] snap-start group">
+<div class="w-14 h-14 bg-surface-container rounded-full flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">add_circle</span>
+</div>
+<span class="font-metadata text-metadata text-center text-on-surface">New<br/>Expense</span>
+</button>
+<button class="flex flex-col items-center gap-2 min-w-[72px] snap-start group">
+<div class="w-14 h-14 bg-surface-container rounded-full flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<span class="font-metadata text-metadata text-center text-on-surface">Cash<br/>Advance</span>
+</button>
+<button class="flex flex-col items-center gap-2 min-w-[72px] snap-start group">
+<div class="w-14 h-14 bg-surface-container rounded-full flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined">receipt_long</span>
+</div>
+<span class="font-metadata text-metadata text-center text-on-surface">Claim<br/>Reimburse</span>
+</button>
+<button class="flex flex-col items-center gap-2 min-w-[72px] snap-start group relative">
+<div class="absolute top-0 right-1 w-3 h-3 bg-error rounded-full border-2 border-surface z-10"></div>
+<div class="w-14 h-14 bg-surface-container rounded-full flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined">inbox</span>
+</div>
+<span class="font-metadata text-metadata text-center text-on-surface">Approval<br/>Inbox</span>
+</button>
+</div>
+</div>
+</div>
+<script>if (!localStorage.getItem('kaoemUser')) window.location.href = 'index.html';</script><style>.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary"><div class="flex justify-between items-center h-16 px-4"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 flex-1 transition-colors text-primary" data-path="home" href="dashboard.html"><span class="material-symbols-outlined">home</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center gap-1 flex-1 text-outline transition-colors" data-path="expense" href="expense.html"><span class="material-symbols-outlined">payments</span><span class="font-label-sm text-label-sm">Expense</span></a><a class="flex flex-col items-center justify-center gap-1 flex-1 text-outline transition-colors" data-path="approval" href="expense.html"><span class="material-symbols-outlined">fact_check</span><span class="font-label-sm text-label-sm">Approval</span></a><a class="flex flex-col items-center justify-center gap-1 flex-1 text-outline transition-colors" data-path="reports" href="dashboard.html"><span class="material-symbols-outlined">analytics</span><span class="font-label-sm text-label-sm">Reports</span></a><a class="flex flex-col items-center justify-center gap-1 flex-1 text-outline transition-colors" data-path="more" href="index.html" onclick="localStorage.removeItem('kaoemUser')"><span class="material-symbols-outlined">logout</span><span class="font-label-sm text-label-sm">Logout</span></a></div></nav></body></html>

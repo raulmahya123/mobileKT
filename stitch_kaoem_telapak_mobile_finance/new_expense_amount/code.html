@@ -1,0 +1,228 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-variant":"#d6e5ed",outline:"#6e7979","primary-fixed-dim":"#77d5d9","on-primary-fixed":"#002021","surface-container":"#e1f0f8","outline-variant":"#bdc9c9","on-secondary":"#ffffff","error-container":"#ffdad6","on-error":"#ffffff","inverse-surface":"#243238","surface-container-low":"#e7f6fe","on-primary-fixed-variant":"#004f52",background:"#f3faff","surface-container-lowest":"#ffffff","surface-container-highest":"#d6e5ed","tertiary-container":"#4a7c5f","on-surface-variant":"#3e4949","on-tertiary-fixed":"#002111","on-primary":"#ffffff","on-tertiary-container":"#e2ffea","surface-container-high":"#dbebf2","on-background":"#0f1d23",secondary:"#8e4e00","on-surface":"#0f1d23","on-secondary-container":"#6f3c00","primary-fixed":"#94f2f6","on-secondary-fixed":"#2e1500","inverse-primary":"#77d5d9",tertiary:"#316348","on-tertiary-fixed-variant":"#1d5036","tertiary-fixed":"#b8efcc","surface-dim":"#cddce4","primary-container":"#007f83",error:"#ba1a1a","on-tertiary":"#ffffff","secondary-fixed-dim":"#ffb778","surface-tint":"#00696d","on-primary-container":"#e1feff",primary:"#006467","secondary-container":"#ffa44c","surface-bright":"#f3faff","tertiary-fixed-dim":"#9dd3b1",surface:"#f3faff","inverse-on-surface":"#e4f3fb","secondary-fixed":"#ffdcc1","on-error-container":"#93000a","on-secondary-fixed-variant":"#6c3a00"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"stack-gap":"8px","container-max-width":"1440px","component-gap":"16px","margin-desktop":"32px","margin-mobile":"16px",gutter:"24px"},fontFamily:{"label-sm":["Poppins"],"page-title-mobile":["Poppins"],"page-title":["Poppins"],metadata:["Poppins"],"label-md":["Poppins"],"section-heading":["Poppins"],"button-text":["Poppins"],"body-main":["Poppins"],"input-text":["Poppins"],"card-value":["Poppins"]},fontSize:{"label-sm":["12px",{lineHeight:"16px",fontWeight:"500"}],"page-title-mobile":["22px",{lineHeight:"28px",fontWeight:"600"}],"page-title":["24px",{lineHeight:"32px",fontWeight:"600"}],metadata:["11px",{lineHeight:"14px",fontWeight:"400"}],"label-md":["13px",{lineHeight:"18px",fontWeight:"500"}],"section-heading":["18px",{lineHeight:"24px",fontWeight:"600"}],"button-text":["14px",{lineHeight:"20px",fontWeight:"500"}],"body-main":["14px",{lineHeight:"20px",fontWeight:"400"}],"input-text":["14px",{lineHeight:"20px",fontWeight:"400"}],"card-value":["24px",{lineHeight:"32px",fontWeight:"600"}]}}}}</script><style>@layer base{body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-main text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-14 px-4 flex items-center gap-2"><button class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container" onclick="history.back()"><span class="material-symbols-outlined text-on-surface">arrow_back</span></button><h1 class="font-page-title-mobile text-page-title-mobile text-on-surface truncate flex-1">Approval Form</h1><div class="flex items-center gap-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLuyLYcQYX3Ee15BUjdozPhj3KscoXzjs-LiJyeS0YGcAPyzwUUu8mYFff3Ok3ix2oHriW9jxcI1jh4kTaPW-gw_3ovrgfRUnLeSf4lBavwnkUeKBhiqoC1b7c-FGmWIx-5Ld11WMcRnBrGmSQPY3Pf5C9jvUqX6TgwOiA-n0UlYwM4141U2lBJ3CYdtq5Xt1Z_hFV5ECc57O53LvhNSNid8qXliTRSnqFpKVjJPFQ92Cn6ZIOWgT_aeaXJ2RHIT8R-Pu_XdIlLmPg"/></div></div></header><main class="relative w-full pt-14 bg-surface min-h-screen px-margin-mobile"><div class="flex flex-col w-full pb-safe">
+<!-- Progress Indicator -->
+<div class="px-margin-mobile pt-6 pb-2">
+<div class="flex items-center justify-between mb-2">
+<span class="font-metadata text-metadata text-on-surface-variant uppercase tracking-wider">Step 3 of 5</span>
+<span class="font-label-sm text-label-sm text-primary">Amount &amp; Tax</span>
+</div>
+<div class="w-full h-1 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500 ease-out" style="width: 60%"></div>
+</div>
+</div>
+<!-- Main Content -->
+<div class="px-margin-mobile flex-1 flex flex-col gap-6 pt-4 pb-24">
+<!-- Amount Input Card -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 overflow-hidden">
+<div class="p-4 bg-surface-container-low/50 border-b border-outline-variant/20">
+<h2 class="font-section-heading text-section-heading text-on-surface">Base Amount</h2>
+<p class="font-body-main text-body-main text-on-surface-variant mt-1">Enter the gross amount before deductions.</p>
+</div>
+<div class="p-4 space-y-4">
+<div class="flex flex-col gap-2 relative">
+<label class="font-label-md text-label-md text-on-surface-variant" for="currency-select">Currency</label>
+<div class="relative">
+<select class="w-full h-12 px-4 rounded-lg border border-outline-variant bg-surface-container-lowest text-on-surface font-body-main appearance-none focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" id="currency-select">
+<option value="IDR">IDR - Indonesian Rupiah (Rp)</option>
+<option value="USD">USD - US Dollar ($)</option>
+<option value="EUR">EUR - Euro (€)</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 relative">
+<label class="font-label-md text-label-md text-on-surface-variant" for="amount-input">Amount</label>
+<div class="relative flex items-center">
+<span class="absolute left-4 font-body-main text-on-surface-variant">Rp</span>
+<input class="w-full h-12 pl-12 pr-4 rounded-lg border border-outline-variant bg-surface-container-lowest text-on-surface font-input-text focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors text-lg" id="amount-input" inputmode="numeric" placeholder="0" type="text" value="12,500,000"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Tax Configuration Card -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 overflow-hidden">
+<div class="p-4 bg-surface-container-low/50 border-b border-outline-variant/20 flex items-center justify-between">
+<div>
+<h2 class="font-section-heading text-section-heading text-on-surface">Tax Configuration</h2>
+<p class="font-body-main text-body-main text-on-surface-variant mt-1">Select applicable withholding tax.</p>
+</div>
+</div>
+<div class="p-4 space-y-4">
+<!-- Trigger for Bottom Sheet -->
+<button class="w-full h-12 px-4 flex items-center justify-between rounded-lg border border-outline-variant bg-surface-container-lowest hover:bg-surface-container transition-colors" onclick="document.getElementById('tax-bottom-sheet').classList.remove('translate-y-full'); document.getElementById('scrim').classList.remove('opacity-0', 'pointer-events-none');" type="button">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">receipt_long</span>
+<span class="font-body-main text-on-surface" id="selected-tax-label">PPh 23 - Services (2%)</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Summary Card -->
+<div class="bg-primary-container text-on-primary-container rounded-xl p-5 relative overflow-hidden mt-2">
+<!-- Decorative background element -->
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-primary/20 rounded-full blur-2xl"></div>
+<h3 class="font-section-heading text-section-heading mb-4">Payment Summary</h3>
+<div class="space-y-3 font-body-main">
+<div class="flex justify-between items-center">
+<span class="text-on-primary-container/80">Requested Amount</span>
+<span class="font-medium" id="summary-requested">Rp 12,500,000</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-primary-container/80" id="summary-tax-label">PPh 23 (2%)</span>
+<span class="font-medium text-error-container" id="summary-tax-amount">- Rp 250,000</span>
+</div>
+<div class="h-[1px] bg-on-primary-container/20 w-full my-3"></div>
+<div class="flex justify-between items-end">
+<span class="font-label-md text-label-md text-on-primary-container/80">Net Payment</span>
+<span class="font-card-value text-card-value" id="summary-net">Rp 12,250,000</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Footer -->
+<div class="fixed bottom-0 left-0 right-0 p-margin-mobile bg-surface-container-lowest/90 backdrop-blur-md border-t border-outline-variant/20 z-10 pb-safe">
+<button class="w-full h-12 bg-primary text-on-primary rounded-lg font-button-text text-button-text flex items-center justify-center gap-2 transition-transform active:scale-[0.98]">
+            Continue
+            <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+<!-- Scrim -->
+<div class="fixed inset-0 bg-on-surface/40 backdrop-blur-sm z-40 opacity-0 pointer-events-none transition-opacity duration-300" id="scrim" onclick="document.getElementById('tax-bottom-sheet').classList.add('translate-y-full'); this.classList.add('opacity-0', 'pointer-events-none');"></div>
+<!-- Tax Selection Bottom Sheet -->
+<div class="fixed bottom-0 left-0 right-0 bg-surface-container-lowest rounded-t-2xl z-50 transform translate-y-full transition-transform duration-300 ease-out pb-safe max-h-[707px] flex flex-col" id="tax-bottom-sheet">
+<div class="p-4 flex-shrink-0 flex flex-col items-center border-b border-outline-variant/20">
+<div class="w-12 h-1 bg-outline-variant/50 rounded-full mb-4"></div>
+<div class="w-full flex items-center justify-between">
+<h3 class="font-section-heading text-section-heading text-on-surface">Select Tax Type</h3>
+<button class="w-8 h-8 flex items-center justify-center rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant" onclick="document.getElementById('tax-bottom-sheet').classList.add('translate-y-full'); document.getElementById('scrim').classList.add('opacity-0', 'pointer-events-none');">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<div class="overflow-y-auto flex-1 p-4">
+<div class="space-y-2">
+<!-- Option 1 -->
+<button class="w-full p-4 flex items-center justify-between rounded-xl bg-surface-container-low border border-primary text-left transition-colors relative overflow-hidden" onclick="selectTax('PPh 23 - Services (2%)', 0.02)">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+<div>
+<div class="font-label-md text-label-md text-on-surface">PPh 23 - Services</div>
+<div class="font-metadata text-metadata text-on-surface-variant mt-1">2% withholding tax for domestic services</div>
+</div>
+<span class="material-symbols-outlined text-primary">check_circle</span>
+</button>
+<!-- Option 2 -->
+<button class="w-full p-4 flex items-center justify-between rounded-xl bg-surface-container-lowest border border-outline-variant/30 hover:bg-surface-container-low text-left transition-colors" onclick="selectTax('PPh 21 - Non-Employee (2.5%)', 0.025)">
+<div>
+<div class="font-label-md text-label-md text-on-surface">PPh 21 - Non-Employee</div>
+<div class="font-metadata text-metadata text-on-surface-variant mt-1">2.5% withholding tax for individuals with NPWP</div>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant"></div>
+</button>
+<!-- Option 3 -->
+<button class="w-full p-4 flex items-center justify-between rounded-xl bg-surface-container-lowest border border-outline-variant/30 hover:bg-surface-container-low text-left transition-colors" onclick="selectTax('PPh 21 - Non-Employee No NPWP (3%)', 0.03)">
+<div>
+<div class="font-label-md text-label-md text-on-surface">PPh 21 - Non-Employee (No NPWP)</div>
+<div class="font-metadata text-metadata text-on-surface-variant mt-1">3% withholding tax for individuals without NPWP</div>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant"></div>
+</button>
+<!-- Option 4 -->
+<button class="w-full p-4 flex items-center justify-between rounded-xl bg-surface-container-lowest border border-outline-variant/30 hover:bg-surface-container-low text-left transition-colors" onclick="selectTax('No Tax (0%)', 0)">
+<div>
+<div class="font-label-md text-label-md text-on-surface">No Tax</div>
+<div class="font-metadata text-metadata text-on-surface-variant mt-1">No withholding tax applicable</div>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant"></div>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+    // Format number to Indonesian Rupiah string
+    const formatRp = (num) => {
+        return 'Rp ' + num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    };
+
+    // Clean formatting to get raw number
+    const parseRp = (str) => {
+        return parseFloat(str.replace(/,/g, '')) || 0;
+    };
+
+    let currentAmount = 12500000;
+    let currentTaxRate = 0.02;
+
+    const amountInput = document.getElementById('amount-input');
+    
+    // Formatting input as user types
+    amountInput.addEventListener('input', function(e) {
+        // Remove non-numeric chars except comma
+        let val = this.value.replace(/[^0-9]/g, '');
+        
+        if (val) {
+            currentAmount = parseInt(val, 10);
+            this.value = currentAmount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            updateSummary();
+        } else {
+            currentAmount = 0;
+            this.value = '';
+            updateSummary();
+        }
+    });
+
+    function selectTax(label, rate) {
+        currentTaxRate = rate;
+        document.getElementById('selected-tax-label').innerText = label;
+        
+        // Close bottom sheet
+        document.getElementById('tax-bottom-sheet').classList.add('translate-y-full');
+        document.getElementById('scrim').classList.add('opacity-0', 'pointer-events-none');
+        
+        // Reset styles on all buttons
+        const buttons = document.querySelectorAll('#tax-bottom-sheet .space-y-2 button');
+        buttons.forEach(btn => {
+            btn.className = 'w-full p-4 flex items-center justify-between rounded-xl bg-surface-container-lowest border border-outline-variant/30 hover:bg-surface-container-low text-left transition-colors';
+            btn.innerHTML = btn.innerHTML.replace('<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>', '');
+            btn.innerHTML = btn.innerHTML.replace('<span class="material-symbols-outlined text-primary">check_circle</span>', '<div class="w-6 h-6 rounded-full border-2 border-outline-variant"></div>');
+        });
+
+        // Set active style on clicked button (find by matching text)
+        const activeBtn = Array.from(buttons).find(btn => btn.innerText.includes(label.split(' ')[0]));
+        if(activeBtn) {
+            activeBtn.className = 'w-full p-4 flex items-center justify-between rounded-xl bg-surface-container-low border border-primary text-left transition-colors relative overflow-hidden';
+            activeBtn.innerHTML = '<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>' + activeBtn.innerHTML.replace('<div class="w-6 h-6 rounded-full border-2 border-outline-variant"></div>', '<span class="material-symbols-outlined text-primary">check_circle</span>');
+        }
+
+        // Update summary label
+        let taxShortLabel = label.split(' (')[0];
+        if (rate > 0) taxShortLabel += ` (${rate * 100}%)`;
+        document.getElementById('summary-tax-label').innerText = taxShortLabel;
+
+        updateSummary();
+    }
+
+    function updateSummary() {
+        const taxAmount = currentAmount * currentTaxRate;
+        const netAmount = currentAmount - taxAmount;
+
+        document.getElementById('summary-requested').innerText = formatRp(currentAmount);
+        
+        if (taxAmount > 0) {
+            document.getElementById('summary-tax-amount').innerText = '- ' + formatRp(taxAmount);
+            document.getElementById('summary-tax-amount').classList.remove('text-on-primary-container/50');
+            document.getElementById('summary-tax-amount').classList.add('text-error-container');
+        } else {
+            document.getElementById('summary-tax-amount').innerText = 'Rp 0';
+            document.getElementById('summary-tax-amount').classList.add('text-on-primary-container/50');
+            document.getElementById('summary-tax-amount').classList.remove('text-error-container');
+        }
+        
+        document.getElementById('summary-net').innerText = formatRp(netAmount);
+    }
+</script></main></body></html>
