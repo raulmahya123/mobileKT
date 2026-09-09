@@ -46,11 +46,53 @@
 <label class="font-label-md text-label-md text-on-surface-variant">Description (Optional)</label>
 <textarea class="w-full p-4 rounded-lg border border-outline-variant bg-surface-container-lowest font-input-text text-input-text text-on-surface focus:border-primary focus:outline-none transition-colors resize-none placeholder-outline-variant" placeholder="Add detailed notes here..." rows="4"></textarea>
 </div>
+<!-- Document Details -->
+<div class="grid grid-cols-1 gap-component-gap">
+<div class="flex flex-col gap-stack-gap">
+<label class="font-label-md text-label-md text-on-surface-variant" for="document-type">Jenis Document</label>
+<select class="w-full h-12 px-4 rounded-lg border border-outline-variant bg-surface-container-lowest font-input-text text-input-text text-on-surface focus:border-primary focus:outline-none transition-colors" id="document-type">
+<option>Invoice</option>
+<option>Kwitansi</option>
+<option>Nota Pembelian</option>
+<option>Surat Tugas</option>
+<option>Kontrak / MoU</option>
+<option>Dokumen Pendukung Lainnya</option>
+</select>
+</div>
+<div class="flex flex-col gap-stack-gap">
+<label class="font-label-md text-label-md text-on-surface-variant" for="coa">COA</label>
+<select class="w-full h-12 px-4 rounded-lg border border-outline-variant bg-surface-container-lowest font-input-text text-input-text text-on-surface focus:border-primary focus:outline-none transition-colors" id="coa">
+<option>5101 - Transportasi Program</option>
+<option>5102 - Konsumsi Kegiatan</option>
+<option>5201 - Honor Narasumber</option>
+<option>5301 - ATK dan Perlengkapan</option>
+<option>5401 - Sewa Tempat</option>
+</select>
+</div>
+<div class="flex flex-col gap-stack-gap">
+<label class="font-label-md text-label-md text-on-surface-variant" for="voucher-number">Nomor Voucher</label>
+<input class="w-full h-12 px-4 rounded-lg border border-outline-variant bg-surface-container-lowest font-input-text text-input-text text-on-surface focus:border-primary focus:outline-none transition-colors placeholder-outline-variant" id="voucher-number" placeholder="Contoh: VCR/KT/2026/001" type="text"/>
+</div>
+</div>
+<!-- Attachments -->
+<div class="flex flex-col gap-stack-gap">
+<label class="font-label-md text-label-md text-on-surface-variant" for="attachments">Attach File</label>
+<label class="min-h-28 rounded-xl border border-dashed border-primary bg-surface-container-lowest p-4 flex flex-col items-center justify-center gap-2 text-center cursor-pointer hover:bg-surface-container transition-colors" for="attachments">
+<span class="material-symbols-outlined text-primary text-[30px]">upload_file</span>
+<span class="font-label-md text-label-md text-on-surface">Upload banyak file</span>
+<span class="font-metadata text-metadata text-on-surface-variant">PDF, JPG, PNG, DOCX, atau XLSX</span>
+</label>
+<input class="hidden" id="attachments" multiple="" onchange="showSelectedFiles(this)" type="file"/>
+<div class="hidden rounded-lg bg-surface-container-low p-3" id="file-list"></div>
+</div>
 </div>
 </div>
 <!-- Sticky Footer -->
-<div class="fixed bottom-0 left-0 w-full px-margin-mobile py-4 pb-safe bg-surface-container-lowest/90 backdrop-blur-md border-t border-surface-variant">
-<button onclick="window.location.href='new-expense-funding.html'" class="w-full h-12 rounded-lg bg-primary text-on-primary font-button-text text-button-text flex items-center justify-center gap-2 hover:bg-primary-container transition-colors shadow-sm">
+<div class="fixed bottom-0 left-0 w-full px-margin-mobile py-4 pb-safe bg-surface-container-lowest/90 backdrop-blur-md border-t border-surface-variant flex gap-3">
+<button onclick="saveExpenseDraft()" class="flex-1 h-12 rounded-lg bg-surface-variant text-on-surface font-button-text text-button-text flex items-center justify-center gap-2 hover:bg-surface-container-high transition-colors shadow-sm">
+      Save Draft
+</button>
+<button onclick="window.location.href='new-expense-funding.html'" class="flex-[2] h-12 rounded-lg bg-primary text-on-primary font-button-text text-button-text flex items-center justify-center gap-2 hover:bg-primary-container transition-colors shadow-sm">
       Continue to Amount
       <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </button>
@@ -146,4 +188,32 @@
       });
     });
   });
+  function showSelectedFiles(input) {
+    const fileList = document.getElementById('file-list');
+    const files = Array.from(input.files || []);
+    if (!files.length) {
+      fileList.classList.add('hidden');
+      fileList.innerHTML = '';
+      return;
+    }
+    fileList.classList.remove('hidden');
+    fileList.innerHTML = files.map(file => `
+      <div class="flex items-center justify-between gap-3 py-2 border-b border-outline-variant/30 last:border-0">
+        <span class="font-label-md text-label-md text-on-surface truncate">${file.name}</span>
+        <span class="font-metadata text-metadata text-on-surface-variant">${Math.ceil(file.size / 1024)} KB</span>
+      </div>
+    `).join('');
+  }
+  function saveExpenseDraft() {
+    const files = Array.from(document.getElementById('attachments').files || []).map(file => file.name);
+    const draft = {
+      documentType: document.getElementById('document-type').value,
+      coa: document.getElementById('coa').value,
+      voucherNumber: document.getElementById('voucher-number').value || 'VCR/KT/2026/DRAFT',
+      files,
+      savedAt: new Date().toISOString()
+    };
+    localStorage.setItem('kaoemExpenseDraft', JSON.stringify(draft));
+    alert('Draft berhasil disimpan.');
+  }
 </script></main></body></html>

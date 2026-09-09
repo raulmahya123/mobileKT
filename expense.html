@@ -26,6 +26,34 @@
 </div>
 <!-- Expense List -->
 <div class="flex flex-col gap-4 mt-2">
+<!-- Draft Card -->
+<div class="bg-surface-container-lowest border border-secondary-container rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary-container"></div>
+<div class="flex justify-between items-start mb-3">
+<div class="flex flex-col">
+<span class="font-metadata text-metadata text-outline tracking-wider mb-1">DRAFT-VCR/KT/2026/001</span>
+<h3 class="font-section-heading text-section-heading text-on-surface leading-tight">Draft Expense Voucher</h3>
+</div>
+<div class="bg-secondary-container/20 px-2.5 py-1 rounded-full flex items-center gap-1 border border-secondary-container/20">
+<span class="material-symbols-outlined text-[14px] text-on-secondary-container">edit_document</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container">Draft</span>
+</div>
+</div>
+<div class="flex items-center gap-2 mb-4">
+<div class="w-6 h-6 rounded-md bg-primary-container/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px] text-primary">attach_file</span>
+</div>
+<span class="font-body-main text-body-main text-on-surface-variant truncate">Invoice, COA 5101, 3 attach file</span>
+</div>
+<div class="h-px w-full bg-surface-variant mb-3"></div>
+<div class="flex justify-between items-end">
+<div class="flex flex-col gap-0.5">
+<span class="font-metadata text-metadata text-outline">LAST SAVED</span>
+<span class="font-label-md text-label-md text-on-surface">09 Sep 2026</span>
+</div>
+<button onclick="window.location.href='new-expense-info.html'" class="px-3 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md">Continue</button>
+</div>
+</div>
 <!-- Card 1 -->
 <div class="bg-surface-container-lowest border border-surface-variant rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer relative overflow-hidden group">
 <!-- Subtle top decorative bar -->
@@ -107,4 +135,4 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-</style></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary"><div class="flex justify-between items-center h-16 px-4"><a class="flex flex-col items-center justify-center gap-1 flex-1 text-outline transition-colors" data-path="home" href="dashboard.html"><span class="material-symbols-outlined">home</span><span class="font-label-sm text-label-sm">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 flex-1 transition-colors text-primary" data-path="expense" href="expense.html"><span class="material-symbols-outlined">payments</span><span class="font-label-sm text-label-sm">Expense</span></a><a class="flex flex-col items-center justify-center gap-1 flex-1 text-outline transition-colors" data-path="approval" href="expense.html"><span class="material-symbols-outlined">fact_check</span><span class="font-label-sm text-label-sm">Approval</span></a><a class="flex flex-col items-center justify-center gap-1 flex-1 text-outline transition-colors" data-path="reports" href="dashboard.html"><span class="material-symbols-outlined">analytics</span><span class="font-label-sm text-label-sm">Reports</span></a><a class="flex flex-col items-center justify-center gap-1 flex-1 text-outline transition-colors" data-path="more" href="index.html" onclick="localStorage.removeItem('kaoemUser')"><span class="material-symbols-outlined">logout</span><span class="font-label-sm text-label-sm">Logout</span></a></div></nav></body></html>
+</style></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary"><div class="flex justify-between items-center h-16 px-4"><a class="flex flex-col items-center justify-center gap-1 flex-1 text-outline transition-colors" data-path="home" href="dashboard.html"><span class="material-symbols-outlined">home</span><span class="font-label-sm text-label-sm">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 flex-1 transition-colors text-primary" data-path="expense" href="expense.html"><span class="material-symbols-outlined">payments</span><span class="font-label-sm text-label-sm">Expense</span></a><a class="flex flex-col items-center justify-center gap-1 flex-1 text-outline transition-colors" data-path="approval" href="approval.html"><span class="material-symbols-outlined">fact_check</span><span class="font-label-sm text-label-sm">Approval</span></a><a class="flex flex-col items-center justify-center gap-1 flex-1 text-outline transition-colors" data-path="reports" href="dashboard.html"><span class="material-symbols-outlined">analytics</span><span class="font-label-sm text-label-sm">Reports</span></a><a class="flex flex-col items-center justify-center gap-1 flex-1 text-outline transition-colors" data-path="more" href="index.html" onclick="localStorage.removeItem('kaoemUser')"><span class="material-symbols-outlined">logout</span><span class="font-label-sm text-label-sm">Logout</span></a></div></nav></body></html>

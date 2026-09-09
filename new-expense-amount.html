@@ -84,11 +84,57 @@
 </div>
 </div>
 </div>
+<!-- Draft & Attachment Summary -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 overflow-hidden">
+<div class="p-4 bg-surface-container-low/50 border-b border-outline-variant/20 flex items-center justify-between">
+<div>
+<h2 class="font-section-heading text-section-heading text-on-surface">Draft Document</h2>
+<p class="font-body-main text-body-main text-on-surface-variant mt-1">Ringkasan voucher dan lampiran sebelum approval.</p>
+</div>
+<span class="rounded-full bg-secondary-container px-3 py-1 font-label-sm text-label-sm text-on-secondary-container">Draft</span>
+</div>
+<div class="p-4 space-y-3 font-body-main text-body-main">
+<div class="flex justify-between gap-4"><span class="text-on-surface-variant">Jenis Document</span><span class="font-medium text-on-surface text-right" id="draft-document-type">Invoice</span></div>
+<div class="flex justify-between gap-4"><span class="text-on-surface-variant">COA</span><span class="font-medium text-on-surface text-right" id="draft-coa">5101 - Transportasi Program</span></div>
+<div class="flex justify-between gap-4"><span class="text-on-surface-variant">Nomor Voucher</span><span class="font-medium text-on-surface text-right" id="draft-voucher">VCR/KT/2026/DRAFT</span></div>
+<div>
+<div class="text-on-surface-variant mb-2">Attach File</div>
+<div class="space-y-2" id="draft-files">
+<div class="flex items-center gap-2 rounded-lg bg-surface-container-low p-3"><span class="material-symbols-outlined text-primary text-[18px]">description</span><span class="font-label-md text-label-md text-on-surface">Belum ada file dipilih</span></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Approval Flow -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/30 overflow-hidden">
+<div class="p-4 bg-surface-container-low/50 border-b border-outline-variant/20">
+<h2 class="font-section-heading text-section-heading text-on-surface">Approval Berjenjang</h2>
+<p class="font-body-main text-body-main text-on-surface-variant mt-1">Pengajuan akan berjalan sesuai urutan berikut.</p>
+</div>
+<div class="p-4 space-y-3">
+<div class="flex gap-3">
+<div class="flex flex-col items-center"><div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">check</span></div><div class="w-px flex-1 bg-outline-variant/50"></div></div>
+<div class="pb-3 flex-1"><div class="font-label-md text-label-md text-on-surface">1. Project Officer</div><select class="mt-2 w-full h-11 px-3 rounded-lg border border-outline-variant bg-surface-container-lowest font-input-text text-input-text text-on-surface" id="approver-project"><option>Rina Wulandari</option><option>Andi Pratama</option><option>Maya Sari</option></select><div class="font-metadata text-metadata text-on-surface-variant mt-1">Review kelengkapan dokumen dan kebutuhan program</div></div>
+</div>
+<div class="flex gap-3">
+<div class="flex flex-col items-center"><div class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">pending</span></div><div class="w-px flex-1 bg-outline-variant/50"></div></div>
+<div class="pb-3 flex-1"><div class="font-label-md text-label-md text-on-surface">2. Finance Officer</div><select class="mt-2 w-full h-11 px-3 rounded-lg border border-outline-variant bg-surface-container-lowest font-input-text text-input-text text-on-surface" id="approver-finance"><option>Dewi Finance</option><option>Fajar Akuntansi</option><option>Siska Treasury</option></select><div class="font-metadata text-metadata text-on-surface-variant mt-1">Validasi COA, pajak, nomor voucher, dan saldo anggaran</div></div>
+</div>
+<div class="flex gap-3">
+<div class="flex flex-col items-center"><div class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">hourglass_empty</span></div><div class="w-px flex-1 bg-outline-variant/50"></div></div>
+<div class="pb-3 flex-1"><div class="font-label-md text-label-md text-on-surface">3. Program Manager</div><select class="mt-2 w-full h-11 px-3 rounded-lg border border-outline-variant bg-surface-container-lowest font-input-text text-input-text text-on-surface" id="approver-manager"><option>Budi Santoso</option><option>Sarah Program</option><option>Yusuf Manager</option></select><div class="font-metadata text-metadata text-on-surface-variant mt-1">Persetujuan aktivitas dan prioritas penggunaan dana</div></div>
+</div>
+<div class="flex gap-3">
+<div class="w-8 h-8 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[18px]">verified</span></div>
+<div class="flex-1"><div class="font-label-md text-label-md text-on-surface">4. Director</div><select class="mt-2 w-full h-11 px-3 rounded-lg border border-outline-variant bg-surface-container-lowest font-input-text text-input-text text-on-surface" id="approver-director"><option>Nur Hidayat</option><option>Ratna Director</option><option>Hendra Executive</option></select><div class="font-metadata text-metadata text-on-surface-variant mt-1">Final approval sebelum proses pembayaran</div></div>
+</div>
+</div>
+</div>
 </div>
 <!-- Sticky Footer -->
 <div class="fixed bottom-0 left-0 right-0 p-margin-mobile bg-surface-container-lowest/90 backdrop-blur-md border-t border-outline-variant/20 z-10 pb-safe">
-<button onclick="alert('Expense berhasil disimpan sebagai draft.'); window.location.href='expense.html';" class="w-full h-12 bg-primary text-on-primary rounded-lg font-button-text text-button-text flex items-center justify-center gap-2 transition-transform active:scale-[0.98]">
-            Continue
+<button onclick="submitForApproval()" class="w-full h-12 bg-primary text-on-primary rounded-lg font-button-text text-button-text flex items-center justify-center gap-2 transition-transform active:scale-[0.98]">
+            Submit Approval
             <span class="material-symbols-outlined text-lg">arrow_forward</span>
 </button>
 </div>
@@ -225,4 +271,31 @@
         
         document.getElementById('summary-net').innerText = formatRp(netAmount);
     }
+    function loadDraftSummary() {
+        const draft = JSON.parse(localStorage.getItem('kaoemExpenseDraft') || '{}');
+        if (draft.documentType) document.getElementById('draft-document-type').innerText = draft.documentType;
+        if (draft.coa) document.getElementById('draft-coa').innerText = draft.coa;
+        if (draft.voucherNumber) document.getElementById('draft-voucher').innerText = draft.voucherNumber;
+        if (draft.files && draft.files.length) {
+            document.getElementById('draft-files').innerHTML = draft.files.map(name => `
+                <div class="flex items-center gap-2 rounded-lg bg-surface-container-low p-3">
+                    <span class="material-symbols-outlined text-primary text-[18px]">description</span>
+                    <span class="font-label-md text-label-md text-on-surface truncate">${name}</span>
+                </div>
+            `).join('');
+        }
+    }
+    function submitForApproval() {
+        const approvalFlow = {
+            projectOfficer: document.getElementById('approver-project').value,
+            financeOfficer: document.getElementById('approver-finance').value,
+            programManager: document.getElementById('approver-manager').value,
+            director: document.getElementById('approver-director').value
+        };
+        localStorage.setItem('kaoemApprovalFlow', JSON.stringify(approvalFlow));
+        localStorage.setItem('kaoemExpenseStatus', 'Pending Approval');
+        alert('Pengajuan berhasil dikirim ke approval berjenjang.');
+        window.location.href = 'expense.html';
+    }
+    loadDraftSummary();
 </script></main></body></html>
