@@ -4,15 +4,15 @@
       min-height: max(884px, 100dvh);
     }
   </style>
-  </head><body class="bg-surface font-body-main text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-14 px-4 flex items-center gap-2"><button class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container" onclick="window.location.href='new-expense-funding.html'"><span class="material-symbols-outlined text-on-surface">arrow_back</span></button><h1 class="font-page-title-mobile text-page-title-mobile text-on-surface truncate flex-1">Approval Form</h1><div class="flex items-center gap-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLuyLYcQYX3Ee15BUjdozPhj3KscoXzjs-LiJyeS0YGcAPyzwUUu8mYFff3Ok3ix2oHriW9jxcI1jh4kTaPW-gw_3ovrgfRUnLeSf4lBavwnkUeKBhiqoC1b7c-FGmWIx-5Ld11WMcRnBrGmSQPY3Pf5C9jvUqX6TgwOiA-n0UlYwM4141U2lBJ3CYdtq5Xt1Z_hFV5ECc57O53LvhNSNid8qXliTRSnqFpKVjJPFQ92Cn6ZIOWgT_aeaXJ2RHIT8R-Pu_XdIlLmPg"/></div></div></header><script>if (!localStorage.getItem('kaoemUser')) window.location.href = 'index.html';</script><main class="relative w-full pt-14 bg-surface min-h-screen px-margin-mobile"><div class="flex flex-col w-full pb-safe">
+  </head><body class="bg-surface font-body-main text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-14 px-4 flex items-center gap-2"><button class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container" onclick="window.location.href='new-expense-approver.html'"><span class="material-symbols-outlined text-on-surface">arrow_back</span></button><h1 class="font-page-title-mobile text-page-title-mobile text-on-surface truncate flex-1">Approval Form</h1><div class="flex items-center gap-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLuyLYcQYX3Ee15BUjdozPhj3KscoXzjs-LiJyeS0YGcAPyzwUUu8mYFff3Ok3ix2oHriW9jxcI1jh4kTaPW-gw_3ovrgfRUnLeSf4lBavwnkUeKBhiqoC1b7c-FGmWIx-5Ld11WMcRnBrGmSQPY3Pf5C9jvUqX6TgwOiA-n0UlYwM4141U2lBJ3CYdtq5Xt1Z_hFV5ECc57O53LvhNSNid8qXliTRSnqFpKVjJPFQ92Cn6ZIOWgT_aeaXJ2RHIT8R-Pu_XdIlLmPg"/></div></div></header><script>if (!localStorage.getItem('kaoemUser')) window.location.href = 'index.html';</script><main class="relative w-full pt-14 bg-surface min-h-screen px-margin-mobile"><div class="flex flex-col w-full pb-safe">
 <!-- Progress Indicator -->
 <div class="px-margin-mobile pt-6 pb-2">
 <div class="flex items-center justify-between mb-2">
-<span class="font-metadata text-metadata text-on-surface-variant uppercase tracking-wider">Step 3 of 5</span>
+<span class="font-metadata text-metadata text-on-surface-variant uppercase tracking-wider">Step 4 of 6</span>
 <span class="font-label-sm text-label-sm text-primary">Amount &amp; Tax</span>
 </div>
 <div class="w-full h-1 bg-surface-container rounded-full overflow-hidden">
-<div class="h-full bg-primary rounded-full transition-all duration-500 ease-out" style="width: 60%"></div>
+<div class="h-full bg-primary rounded-full transition-all duration-500 ease-out" style="width: 66%"></div>
 </div>
 </div>
 <!-- Main Content -->
@@ -114,19 +114,19 @@
 <div class="p-4 space-y-3">
 <div class="flex gap-3">
 <div class="flex flex-col items-center"><div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">check</span></div><div class="w-px flex-1 bg-outline-variant/50"></div></div>
-<div class="pb-3 flex-1"><div class="font-label-md text-label-md text-on-surface">1. Project Officer</div><select class="mt-2 w-full h-11 px-3 rounded-lg border border-outline-variant bg-surface-container-lowest font-input-text text-input-text text-on-surface" id="approver-project"><option>Rina Wulandari</option><option>Andi Pratama</option><option>Maya Sari</option></select><div class="font-metadata text-metadata text-on-surface-variant mt-1">Review kelengkapan dokumen dan kebutuhan program</div></div>
+<div class="pb-3 flex-1"><div class="font-label-md text-label-md text-on-surface">1. Project Officer</div><div class="mt-2 rounded-lg bg-surface-container-low px-3 py-2 font-label-md text-label-md text-on-surface" id="summary-approver-project">Rina Wulandari</div><div class="font-metadata text-metadata text-on-surface-variant mt-1">Review kelengkapan dokumen dan kebutuhan program</div></div>
 </div>
 <div class="flex gap-3">
 <div class="flex flex-col items-center"><div class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">pending</span></div><div class="w-px flex-1 bg-outline-variant/50"></div></div>
-<div class="pb-3 flex-1"><div class="font-label-md text-label-md text-on-surface">2. Finance Officer</div><select class="mt-2 w-full h-11 px-3 rounded-lg border border-outline-variant bg-surface-container-lowest font-input-text text-input-text text-on-surface" id="approver-finance"><option>Dewi Finance</option><option>Fajar Akuntansi</option><option>Siska Treasury</option></select><div class="font-metadata text-metadata text-on-surface-variant mt-1">Validasi COA, pajak, nomor voucher, dan saldo anggaran</div></div>
+<div class="pb-3 flex-1"><div class="font-label-md text-label-md text-on-surface">2. Finance Officer</div><div class="mt-2 rounded-lg bg-surface-container-low px-3 py-2 font-label-md text-label-md text-on-surface" id="summary-approver-finance">Dewi Finance</div><div class="font-metadata text-metadata text-on-surface-variant mt-1">Validasi COA, pajak, nomor voucher, dan saldo anggaran</div></div>
 </div>
 <div class="flex gap-3">
 <div class="flex flex-col items-center"><div class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">hourglass_empty</span></div><div class="w-px flex-1 bg-outline-variant/50"></div></div>
-<div class="pb-3 flex-1"><div class="font-label-md text-label-md text-on-surface">3. Program Manager</div><select class="mt-2 w-full h-11 px-3 rounded-lg border border-outline-variant bg-surface-container-lowest font-input-text text-input-text text-on-surface" id="approver-manager"><option>Budi Santoso</option><option>Sarah Program</option><option>Yusuf Manager</option></select><div class="font-metadata text-metadata text-on-surface-variant mt-1">Persetujuan aktivitas dan prioritas penggunaan dana</div></div>
+<div class="pb-3 flex-1"><div class="font-label-md text-label-md text-on-surface">3. Program Manager</div><div class="mt-2 rounded-lg bg-surface-container-low px-3 py-2 font-label-md text-label-md text-on-surface" id="summary-approver-manager">Budi Santoso</div><div class="font-metadata text-metadata text-on-surface-variant mt-1">Persetujuan aktivitas dan prioritas penggunaan dana</div></div>
 </div>
 <div class="flex gap-3">
 <div class="w-8 h-8 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[18px]">verified</span></div>
-<div class="flex-1"><div class="font-label-md text-label-md text-on-surface">4. Director</div><select class="mt-2 w-full h-11 px-3 rounded-lg border border-outline-variant bg-surface-container-lowest font-input-text text-input-text text-on-surface" id="approver-director"><option>Nur Hidayat</option><option>Ratna Director</option><option>Hendra Executive</option></select><div class="font-metadata text-metadata text-on-surface-variant mt-1">Final approval sebelum proses pembayaran</div></div>
+<div class="flex-1"><div class="font-label-md text-label-md text-on-surface">4. Director</div><div class="mt-2 rounded-lg bg-surface-container-low px-3 py-2 font-label-md text-label-md text-on-surface" id="summary-approver-director">Nur Hidayat</div><div class="font-metadata text-metadata text-on-surface-variant mt-1">Final approval sebelum proses pembayaran</div></div>
 </div>
 </div>
 </div>
@@ -273,9 +273,14 @@
     }
     function loadDraftSummary() {
         const draft = JSON.parse(localStorage.getItem('kaoemExpenseDraft') || '{}');
+        const approvalFlow = JSON.parse(localStorage.getItem('kaoemApprovalFlow') || '{}');
         if (draft.documentType) document.getElementById('draft-document-type').innerText = draft.documentType;
         if (draft.coa) document.getElementById('draft-coa').innerText = draft.coa;
         if (draft.voucherNumber) document.getElementById('draft-voucher').innerText = draft.voucherNumber;
+        if (approvalFlow.projectOfficer) document.getElementById('summary-approver-project').innerText = approvalFlow.projectOfficer;
+        if (approvalFlow.financeOfficer) document.getElementById('summary-approver-finance').innerText = approvalFlow.financeOfficer;
+        if (approvalFlow.programManager) document.getElementById('summary-approver-manager').innerText = approvalFlow.programManager;
+        if (approvalFlow.director) document.getElementById('summary-approver-director').innerText = approvalFlow.director;
         if (draft.files && draft.files.length) {
             document.getElementById('draft-files').innerHTML = draft.files.map(name => `
                 <div class="flex items-center gap-2 rounded-lg bg-surface-container-low p-3">
@@ -286,13 +291,6 @@
         }
     }
     function submitForApproval() {
-        const approvalFlow = {
-            projectOfficer: document.getElementById('approver-project').value,
-            financeOfficer: document.getElementById('approver-finance').value,
-            programManager: document.getElementById('approver-manager').value,
-            director: document.getElementById('approver-director').value
-        };
-        localStorage.setItem('kaoemApprovalFlow', JSON.stringify(approvalFlow));
         localStorage.setItem('kaoemExpenseStatus', 'Pending Approval');
         alert('Pengajuan berhasil dikirim ke approval berjenjang.');
         window.location.href = 'expense.html';
