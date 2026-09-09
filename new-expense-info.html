@@ -90,11 +90,12 @@
 </div>
 <!-- Sticky Footer -->
 <div class="fixed bottom-0 left-0 w-full px-margin-mobile py-4 pb-safe bg-surface-container-lowest/90 backdrop-blur-md border-t border-surface-variant flex gap-3">
+<p class="hidden absolute -top-11 left-margin-mobile right-margin-mobile rounded-lg bg-surface-container-low px-3 py-2 font-label-md text-label-md text-primary shadow-sm" id="draft-saved-message">Draft berhasil disimpan.</p>
 <button onclick="saveExpenseDraft()" class="flex-1 h-12 rounded-lg bg-surface-variant text-on-surface font-button-text text-button-text flex items-center justify-center gap-2 hover:bg-surface-container-high transition-colors shadow-sm">
       Save Draft
 </button>
 <button onclick="window.location.href='new-expense-funding.html'" class="flex-[2] h-12 rounded-lg bg-primary text-on-primary font-button-text text-button-text flex items-center justify-center gap-2 hover:bg-primary-container transition-colors shadow-sm">
-      Continue to Amount
+      Continue
       <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </button>
 </div>
@@ -215,6 +216,6 @@
       savedAt: new Date().toISOString()
     };
     localStorage.setItem('kaoemExpenseDraft', JSON.stringify(draft));
-    alert('Draft berhasil disimpan.');
+    document.getElementById('draft-saved-message').classList.remove('hidden');
   }
 </script></main></body></html>
